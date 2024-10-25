@@ -12,6 +12,8 @@ contact@koirdsuzu.com
 ## Organizations
 <a aria-label="Hoshizora-Server" itemprop="follows" class="avatar-group-item" data-hovercard-type="organization" data-hovercard-url="/orgs/Hoshizora-Server/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:108934000,&quot;target&quot;:&quot;MEMBER_ORGANIZATION_AVATAR&quot;,&quot;user_id&quot;:155215481,&quot;originating_url&quot;:&quot;https://github.com/yu-solt&quot;}}" data-hydro-click-hmac="60a5ceee46696172a1231732ca048e87e6e305b699adb309cba41d81c71f982f" href="/Hoshizora-Server">
       <img src="https://avatars.githubusercontent.com/u/176555169?s=64&amp;v=4" alt="@Hoshizora-Server" size="32" height="32" width="32" data-view-component="true" class="avatar">
+  <a aria-label="Hima-Server" itemprop="follows" class="avatar-group-item" data-hovercard-type="organization" data-hovercard-url="/orgs/Hima-Server/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Hima-Server">
+      <img src="https://avatars.githubusercontent.com/u/186317061?s=64&amp;v=4" alt="@Hima-Server" size="32" height="32" width="32" data-view-component="true" class="avatar">
 </a></div>
 
 ## Join My Discord Server
