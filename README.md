@@ -4,7 +4,7 @@ My hobbies are playing games and listening to music.<br>
 The languages ​​I use are <img src="https://cdn.discordapp.com/emojis/1031060922422267934.webp?size=128&quality=lossless" size="20" height="20" width="20" width="30"/>Java and <img src="https://cdn.discordapp.com/emojis/596577462335307777.webp?size=128&quality=lossless" size="16" height="16" width="16" width="30"/>Python.<br>
 My Icon creator:[Ryuuu_blue](https://twitter.com/blue_hat)<br>
 My Logo creator:[Pal_Tom_Num](https://twitter.com/left_the_game)<br>
-![Banner](https://media.discordapp.net/attachments/1269570356759363586/1306302700153081916/06ed46ada7aa226f.png?ex=67362cb1&is=6734db31&hm=c849fbf845d73361ee655ae3e576c99f80c24818483b9b8541a44b6bb46a2f9b&=&format=webp&quality=lossless&width=786&height=336)
+![Banner](https://lh3.googleusercontent.com/BpkcuoUNxjxwAzBVTLjkJPGlmACHpgzj3ARZR-oezHQrJ70_Die0WY4Jkg4aBq8MbvUXBg9_0LyXt_DtnZ4iEbjyAgdnYXcdC4GtNS2KJvHE6Hb9Z_HrRAC9iFTphMhDMw=w1280)<br>
 | Playgame              | Favorite Songs                    |
 |-----------------------|-----------------------------------|
 | Minecraft             | ワタリドリ/[Alexandros]            |
