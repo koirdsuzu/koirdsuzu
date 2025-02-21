@@ -11,6 +11,21 @@
             background-image: url('file/img/backboard.png');
             background-size: cover;
         }
+        .hidden {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.3s ease-in;
+        }
+        .visible {
+            max-height: 500px; 
+            opacity: 1;
+            transition: max-height 0.5s ease-in, opacity 0.3s ease-in;
+        }
+        .rotate-180 {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body class="flex justify-center items-center min-h-screen">
@@ -42,8 +57,46 @@
                 <span>GitHub</span>
             </a>
         </div>
-        
+
+        <button id="toggleButton" class="mt-4 bg-gray-600 px-4 py-2 rounded-lg hover:bg-gray-500 transition flex items-center justify-center mx-auto">
+            <span>Secondary Links</span>
+            <svg id="arrowIcon" class="w-4 h-4 ml-2 transition-transform" fill="white" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 12l-6-6h12l-6 6z" clip-rule="evenodd"></path></svg>
+        </button>
+
+        <div id="secondaryLinks" class="hidden mt-4 px-6 space-y-4">
+            <a href="#" class="flex items-center space-x-3 bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600 transition">
+                <img src="file/ico/link1.png" class="w-6 h-6">
+                <span>Link 1</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600 transition">
+                <img src="file/ico/link2.png" class="w-6 h-6">
+                <span>Link 2</span>
+            </a>
+            <a href="#" class="flex items-center space-x-3 bg-gray-700 px-4 py-2 rounded-lg hover:bg-gray-600 transition">
+                <img src="file/ico/link3.png" class="w-6 h-6">
+                <span>Link 3</span>
+            </a>
+        </div>
+
         <p class="text-xs text-gray-500 mt-4 mb-4">Copyright &copy; 2023~2025 koirdsuzu All rights reserved.</p>
     </div>
+
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function () {
+            let links = document.getElementById("secondaryLinks");
+            let arrow = document.getElementById("arrowIcon");
+
+            if (links.classList.contains("hidden")) {
+                links.classList.remove("hidden");
+                links.classList.add("visible");
+                arrow.classList.add("rotate-180");
+            } else {
+                links.classList.remove("visible");
+                links.classList.add("hidden");
+                arrow.classList.remove("rotate-180");
+            }
+        });
+    </script>
+
 </body>
 </html>
