@@ -97,6 +97,44 @@
             }
         });
     </script>
+    
+<button id="muteButton" class="absolute top-4 right-4 bg-gray-700 p-2 rounded-full shadow-lg hover:bg-gray-600 transition">
+    <svg id="muteIcon" class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M5 8.5a1 1 0 011-1h2.5L12 4v12l-3.5-3.5H6a1 1 0 01-1-1V8.5zm10.707-2.793a1 1 0 00-1.414 1.414A5.972 5.972 0 0116 10a5.97 5.97 0 01-.707 2.879 1 1 0 001.414 1.414A7.97 7.97 0 0018 10a7.97 7.97 0 00-2.293-5.707z" clip-rule="evenodd"/>
+    </svg>
+</button>
+
+<audio id="bgm" loop>
+    <source src="file/audio/bgm.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let bgm = document.getElementById("bgm");
+        let muteButton = document.getElementById("muteButton");
+        let muteIcon = document.getElementById("muteIcon");
+
+        let isMuted = localStorage.getItem("bgmMuted") === "true";
+        bgm.volume = 0.5;
+        if (isMuted) {
+            bgm.muted = true;
+            muteIcon.innerHTML = `<path fill-rule="evenodd" d="M5 8.5a1 1 0 011-1h2.5L12 4v12l-3.5-3.5H6a1 1 0 01-1-1V8.5zm9.793 2.207a1 1 0 00-1.414-1.414A3.978 3.978 0 0114 10c0-.839-.259-1.618-.707-2.293a1 1 0 10-1.414 1.414A5.972 5.972 0 0116 10a5.97 5.97 0 01-.707 2.879z" clip-rule="evenodd"/>`;
+        } else {
+            bgm.play();
+        }
+
+        muteButton.addEventListener("click", function () {
+            bgm.muted = !bgm.muted;
+            localStorage.setItem("bgmMuted", bgm.muted);
+
+            if (bgm.muted) {
+                muteIcon.innerHTML = `<path fill-rule="evenodd" d="M5 8.5a1 1 0 011-1h2.5L12 4v12l-3.5-3.5H6a1 1 0 01-1-1V8.5zm9.793 2.207a1 1 0 00-1.414-1.414A3.978 3.978 0 0114 10c0-.839-.259-1.618-.707-2.293a1 1 0 10-1.414 1.414A5.972 5.972 0 0116 10a5.97 5.97 0 01-.707 2.879z" clip-rule="evenodd"/>`;
+            } else {
+                muteIcon.innerHTML = `<path fill-rule="evenodd" d="M5 8.5a1 1 0 011-1h2.5L12 4v12l-3.5-3.5H6a1 1 0 01-1-1V8.5zm10.707-2.793a1 1 0 00-1.414 1.414A5.972 5.972 0 0116 10a5.97 5.97 0 01-.707 2.879 1 1 0 001.414 1.414A7.97 7.97 0 0018 10a7.97 7.97 0 00-2.293-5.707z" clip-rule="evenodd"/>`;
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
