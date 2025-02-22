@@ -16,7 +16,7 @@
 
     <script>
         const owner = "koirdsuzu";
-        const repo = "koirdsuzu";
+        const repo = "koirdsuzu/file/img/";
         const branch = "main";
         const url = `https://api.github.com/repos/${owner}/${repo}/contents/`;
 
